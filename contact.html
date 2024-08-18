@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="container">
+    <nav>
+        <name>Rahini</name>
+        <ul>
+            <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <!-- <a href="journal.html">Journal</a> -->
+        <a >Contact</a>
+    </ul>
+    <button class="btn1">
+        <a href="https://mail.google.com/mail/u/0/#sent?compose=DmwnWrRrlJBxxZlLtwdDxwVtcDMCCvWgLWllmgrzfZVWdDhJrFJFhfMGtPsZFNSBFJfMZZtnMjCq">
+            <i></i>Let's Work Together</a>
+        </button>
+       </nav>
+       <div class="nav">
+        <name>Rahini</name>
+    
+        <div class="handburger ">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </div>
+       <div class="name">
+        <p>Contact</p>
+        <h1>Get In Touch</h1>
+       </div>
+
+<div class="inspiring">
+    <h1>Let's Take Your Knowledge To The Next Level.</h1>
+    <p>In today’s rapidly evolving technological landscape, the importance of computer science cannot be overstated. As our world becomes increasingly digitized, the demand for skilled professionals in this field continues to soar. Whether you’re a novice exploring the possibilities of computer science or a seasoned practitioner seeking to expand your knowledge, understanding the fundamental principles is paramount. So, what exactly constitutes the basic knowledge for computer science students? Let’s embark on a comprehensive journey to explore the essential areas that every aspiring computer scientist should prioritize.
+         Discover the benefits of pursuing a computer science degree and how it can enhance your career prospects.
+    </p>
+    <p><b>Programming Languages:</b> At the very core of computer science lies the ability to communicate with computers through programming languages. From Python and Java to C++ and JavaScript, the choices are vast. However, what’s more critical than the language itself is the understanding of its syntax, semantics, and paradigms. Mastery of a programming language empowers 
+        students to translate algorithms into executable code efficiently.</p>
+</div>
+<div class="letWork">
+    <h1>Let's Work Together</h1>
+    <p>I'm interested to work with you. Call me if you want to work with me.  </p>
+    <div class="mail"><a href="https://mail.google.com/mail/u/0/#sent?compose=DmwnWrRrlJBxxZlLtwdDxwVtcDMCCvWgLWllmgrzfZVWdDhJrFJFhfMGtPsZFNSBFJfMZZtnMjCq">
+        <i></i>Send Me An Mail</a> </div>
+</div>
+<div class="detail">
+    <h5>EMAIL</h5>
+    <a >rahinimanikandan39@gmail.com</a>
+        <h5>PHONE</h5>
+        <phone>+91-9080905757</phone>
+        
+</div>
+    
+<footer>
+    <div class="icon">
+        <a href="https://www.facebook.com/share/ne4x38tBUpetu8Xd/?mibextid=qi2Omg"><i class="fa fa-facebook fb"></i></a> 
+        <a href="https://x.com/Rahini_26?t=-4SMOhJIcrsKZ_8C7yHXog&s=09"><i class="fa fa-twitter x "></i></a> 
+        <a href="https://www.instagram.com/_rahi_26?igsh=ZHBkNjB5eDZyajk5"><i class="fa fa-instagram insta" aria-hidden="true"></i></a> 
+        <a href="https://github.com/rahinimanikandan">
+          <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      
+      </div>
+        <div class="last">
+            <div class="lastCont">
+           <p>@Copyright Rahini 2024</p> 
+           <p>Design by <a href="">Rahini</a> </p>
+           <p>Developed by <a href="">Rahini</a></p></div>
+           <button class="up"
+           >&#8593;</button>
+        </div>
+       
+    
+</footer>
+</div>
+       <script>
+           body=document.querySelector('body')
+    btnUp=document.querySelector('.up')
+    h=body.scrollHeight
+
+    btnUp.addEventListener('click',()=>{
+//    btnUp=true
+    window.scrollTo(0,`${-h}`)
+    body.classList.add('smooth')
+ })
+ click=document.querySelector('.nav .handburger')
+ click.addEventListener('click',()=>{
+   
+ })
+ nav=document.querySelector('nav')
+names=document.querySelector('nav name')
+ul=document.querySelector('nav ul')
+a=document.querySelector(' a')
+butn=document.querySelector('nav button')
+nav1=document.querySelector('.nav')
+
+
+c=0;
+click.addEventListener('click',()=>{
+   if(c%2==0){
+   nav.classList.add('head')
+   names.classList.add('name')
+   ul.classList.add('ul')
+    
+   names.style.background='transparent'
+  names.innerText=''
+   butn.classList.add('button1')
+   click.classList.remove('remove')
+   }else{
+      nav.classList.remove('head')
+   names.classList.remove('name')
+   ul.classList.remove('ul')
+   names.style.display='flex'
+   butn.classList.remove('button1')
+   click.classList.remove('remove')
+
+    names.innerText='Rahini'
+   
+   }
+   c++;
+   
+})
+       </script>
+</body>
+</html>

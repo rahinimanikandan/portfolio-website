@@ -1,0 +1,473 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'poppins';
+    /* user-select: none; */
+}
+body{
+    position: relative;
+}
+.container{
+   
+    height:100%;
+    width:100vw;
+    
+    
+} 
+nav{
+
+    overflow: hidden;
+    position: fixed;
+    top:0px;
+    
+    width: 100%;
+   
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.753);
+    
+    
+    padding:0px 30px 0px 30px ;
+    flex-wrap: nowrap;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+
+   
+}
+nav button{
+    height:50px;
+    width:200px;
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    color:orange;
+    font-size: 15px;
+    font-weight: bold;
+    border:1px solid orange;
+
+}
+nav button a{
+    /* box-sizing: none; */
+    height:100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    overflow: hidden;
+    color:orange;
+    
+    }
+    nav button a:hover{
+        color:black;
+        background-color: orange ;
+        transition: all .5s linear ;
+        cursor: pointer;
+       
+    }
+name{
+    
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color:white;
+}
+nav ul{
+    display: flex;
+   /* height:100%; */
+   align-items: center;
+   width: 40%;
+   color: #f5eded98;
+   font-weight: bolder;
+}
+ul a{
+    height: 50px;
+    width:100%;
+    text-align: center;
+    /* padding-top:13%; */
+
+    box-sizing: border-box;
+    padding:0px 10px 0px 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-decoration: none;
+    width: 100%;
+
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+ul a:nth-child(2){
+    color:orange;
+}
+ul a:active,a:hover,ul a:nth-child(2):hover{
+  
+        background-color: orange;
+        color: black;
+        transition:all 0.5s linear;
+ 
+}
+.name{
+    /* height:300px;
+    width:100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3 0px;
+    background: #000;
+}
+.name p{
+    color:orange;
+}
+.name h1{
+font-size: 80px;
+color: white;
+}
+.inspiring{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    padding:30px 30px 0px 30px;
+    
+}
+.inspiring h1{
+    font-size:50px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.inspiring p{
+    font-size: 25px;
+    text-align: justify;
+}
+.img{
+    height: 600px;
+    width:600px;
+    overflow: hidden;
+  width: 100vw;
+  display: flex;
+  
+   
+}
+.img img{
+    height:600px;
+    width: 600px;
+    margin:auto;
+
+
+}
+.edu{
+    margin: 20px 50px;
+   
+}
+.edu ul{
+    display: flex;
+    flex-direction: column;
+    row-gap:20px ;
+    padding-left: 100px;
+}
+.edu h2{
+    text-decoration: underline;
+    margin: 20px 0px;
+}
+.edu ul li{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.edu .now li::before{
+content: '\2713';
+color:green;
+padding: 10px;
+font-weight: bolder;
+}
+.current{
+    display: flex;
+    font-size: 20px;
+    row-gap:20px ;
+    align-items: center;
+    padding-left: 95px;
+    width: 500px;
+    /* background: #a80909; */
+    /* column-gap: 10px; */
+    margin-top:10px;
+}
+.box{
+    height:20px;
+    width:20px;
+    border: 3px solid rgb(17, 146, 233);
+   margin: 10px;
+   border-top-color:rgb(245, 235, 235) ;
+   border-right-width: 3px;
+   border-radius: 50%;
+   animation: loading 1.3s linear infinite;
+
+}
+
+@keyframes loading {
+    0%{
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+footer a{
+    color:white;
+}
+footer{
+   
+    margin-top: 20px;
+    padding:20px 30px 30px 30px ;
+    background: black;
+color: white;
+}
+footer button{
+    height:40px;
+    width:40px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid orange;
+    color:orange;
+    cursor: pointer;
+   
+    font-weight: 1200;
+    font-size: 20px;
+    
+}
+footer button:hover{
+    
+    background: orange;
+    color:black;
+    transition: all .5s linear ;
+}
+footer .last{
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .last .lastCont{
+    
+    display: flex;
+    column-gap:10px;
+    align-items: center;
+    font-size: 12px;
+}
+footer .icon{
+   
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .icon i{
+  
+    font-size:30px;
+    padding:10px;
+    color: white;
+}
+footer .icon i:hover{ background: #ffa500;
+    color:black;
+    transition: all .5s linear ;
+    
+}
+.smooth{
+    transform: translateY(0px);
+    transition: all 1s linear 1;
+    /* animation: up 1s linear 1; */
+}
+.size{
+    padding-top: 50px;
+}
+
+@media screen and(min-width:350px),(max-width:960px){
+    nav{
+        display: none;
+    }
+    nav name{
+        
+        display: none;
+        margin-top:100px;
+    }
+     .nav{
+        width:100%;
+        position: fixed;
+    top:0px;
+        display: flex;
+        background-color: red;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 30px 0px 30px;
+        background: rgba(0, 0, 0, 0.014);
+        z-index: 20;
+        backdrop-filter: blur(120px);
+        margin-bottom: 100px;
+    }
+    .handburger{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        cursor: pointer;
+    }
+   
+
+    .handburger:active span{
+        background-color: orange;
+    }
+    .main img{
+   
+        height:350px;
+        width:350px;
+        animation: image 3s linear 1;
+        box-sizing: border-box;
+        padding:20px;
+    
+    
+    }
+
+    span{
+        z-index: 10;
+        height:5px;
+        width:25px;
+        background-color: aliceblue;
+        border-radius: 3px;
+     }
+    .remove{
+        display: none;
+    }
+    
+    .main .details {
+        letter-spacing: 5px;
+        font-size: 25px;    
+    }
+   
+    .inspiring p,.edu .now {
+        font-size: 15px;
+    }
+    .inspiring h1,.edu h1 {
+        font-size: 28px;
+    }
+    footer p{
+        font-size: 10px;
+    }
+    .size h1{
+        padding-top:50px;
+    font-size:40px;
+    }
+.edu .font li,p{
+    font-size: 15px;
+}
+nav .n{
+    /* display: none; */
+    margin-bottom: 10px;
+}
+
+.size{
+    padding: 100px 30px 30px 30px;
+}
+}  
+
+
+/*----------------------------------------------------*/
+
+.head{
+    height:100%;
+    width:100vw;
+    display:flex;  
+position: fixed;
+top:0px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  
+    background: rgba(14, 13, 13, 0.144);
+    
+    padding:0px 30px 100px 30px ;
+    flex-wrap: nowrap;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+   
+}
+ .button1{
+    height:50px;
+    width:100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    color:orange;
+    font-size: 15px;
+    font-weight: bold;
+    border:1px solid orange;
+    text-align: center;
+    display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.a{
+height:100%;
+width:100%;
+
+text-decoration: none;
+text-align: center;
+
+}
+.button1:hover,.a:hover{
+    color:black;
+    background-color: orange ;
+    transition: all .5s linear ;
+    cursor: pointer;
+   
+}
+.name{
+    
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color:white;
+}
+.ul{
+    display: flex;
+    flex-direction: column;
+
+   height:100%;
+   align-items: center;
+   width: 100%;
+   color: #f5eded98;
+   font-weight: bolder;
+}
+.ul .a{
+    height: 100%;
+    width:100%;
+    text-align: center;
+    
+    margin-top: 40px;
+    box-sizing: border-box;
+    padding:0px 10px 0px 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.ul .a:first-child{
+    color:orange;
+}
+.ul .a:hover{
+background:orange;
+}
+
+
+/*-------------------------------------*/
